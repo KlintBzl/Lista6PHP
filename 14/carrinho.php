@@ -2,7 +2,15 @@
 
 class Carrinho{
 
-public $produtos = [];
+private $produtos = [];
+
+    public function getProdutos() {
+        return $this->produtos;
+    }
+
+    public function setProdutos($produtos) {
+        $this->produtos = $produtos;
+    }
 
     public function adicionarProduto($produto) {
         $this->produtos[] = $produto;

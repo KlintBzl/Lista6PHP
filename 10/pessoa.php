@@ -2,8 +2,24 @@
 
  class Pessoas{
 
-public $nome;
-public $idade;
+private $nome;
+private $idade;
+
+    public function getNome() {
+        return $this->nome;
+    }
+
+    public function setNome($nome) {
+        $this->nome = $nome;
+    }
+
+    public function getIdade() {
+        return $this->idade;
+    }
+
+    public function setIdade($idade) {
+        $this->idade = $idade;
+    }
 
 public function __construct($nome, $idade){
     $this->nome = $nome;

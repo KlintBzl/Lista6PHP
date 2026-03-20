@@ -2,7 +2,11 @@
 
  class Lampada{
 
-public $status = "Desligada";
+private $status = "Desligada";
+
+public function getStatus() {
+    return $this->status;
+}
 
 public function setStatus($status){
     return $this->status = $status;

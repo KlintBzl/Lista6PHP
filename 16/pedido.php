@@ -2,8 +2,24 @@
 
 class Pedido {
 
-    public $cliente;
-    public $produtos = [];
+    private $cliente;
+    private $produtos = [];
+
+    public function getCliente() {
+        return $this->cliente;
+    }
+
+    public function setCleinte($cliente) {
+        $this->cliente = $cliente;
+    }
+
+    public function getProdutos() {
+        return $this->produtos;
+    }
+
+    public function setPreco($produtos) {
+        $this->produtos = $produtos;
+    }
 
     public function __construct($cliente) {
         $this->cliente = $cliente;
